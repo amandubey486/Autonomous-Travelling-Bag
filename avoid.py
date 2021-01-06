@@ -31,7 +31,7 @@ def update(change):
     y = model_trt(x)
     #print(y)
     
-    # we apply the `softmax` function to normalize the output vector so it sums to 1 (which makes it a probability distribution)
+    # we apply the `softmax` function to normalize the output vector so it sums to 1.0 (which makes it a probability distribution)
     y = F.softmax(y, dim=1)
     #print(y)
     
